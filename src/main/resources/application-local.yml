@@ -1,0 +1,14 @@
+server:
+   port: 8083
+
+endpoints:
+   shutdown:
+      enabled: true
+
+spring:
+   datasource:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:bootapp;DB_CLOSE_DELAY=-1
+      username: sa
+      password:
+      platform: hsqldb
